@@ -1,11 +1,13 @@
 import React from "react";
 
-export const Dog = () => {
+const Dog = ({ name, chipNum }) => {
   return (
     <li>
-      <h3>A Soon to be Name Dog</h3>
-      <span>Chip #: 123</span>
+      <h3>{name}</h3>
+      <span>Chip #: {chipNum}</span>
       <button>add Chip</button>
     </li>
   );
 };
+
+export default Dog;
